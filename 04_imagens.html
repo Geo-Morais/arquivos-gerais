@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+
+</head>
+
+<body>
+
+    <h2> Trabalhando com Imagens </h2>
+
+    <!-- 
+     "IMG" - Para adicionar imagem.
+     "SCR" - Source (Fonte/Origem do Arquivo). 
+     "ALT" - Alternative. Acessibilidade (Texto descritivo da imagem que você colocou. Aparece quando a imagem não é carregada). -->
+    <img src="vinho.jpg" alt="Decoração com Vinho" width="300" height="400">
+
+    <!-- É possível controlar a altura e a largura da imagem pelo HTML.
+    Height (Altura) = Representa a altura da imagem
+    Width (Largura) = Representa largura/comprimento da imagem -->
+
+    <hr>
+
+    <!-- É possível utillizar imageins exeternas. -->
+    <img src="https://abreulandia.to.gov.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+    alt="Pinguins" width="300" height="300">
+
+
+    <hr>
+
+    <!-- Quando for fazer alguma referencia. -->
+    <figure>
+      <img src="decoração.jpg" alt="Decoração" width="300" height="400">
+      <figcaption> Decoração Moderna - Casacor </figcaption>
+    </figure>
+
+    <!-- Complemento sobre as Imagens 28.07.25 -->
+    <picture> 
+        <source srcset="caneca.jpg" type="imagem/jpg"> 
+        <source srcset="cenca.png" type="imagem/png">
+        <source srcset="caneca.jpeg" type="imagem/jpeg">
+
+        <!-- Fallback - Imagem Padrão caso as imagens anteriores falhem ou não sejam suportadas. -->
+         <img src="caneca.jpg" alt="Caneca Decoradinha" width="300" height="400">
+    </picture>
+
+</body>
+
+</html>

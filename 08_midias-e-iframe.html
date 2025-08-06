@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias e Iframe</title>
+</head>
+
+<body>
+    <!-- Iframe = Inline Frames. Esse recurso é utilizado para incorporar recursos internos e externos no nosso documento HTML. -->
+
+    <!-- 
+     Frameborder - Define se o Iframe vai ter uma borda.
+     Allowfullscreen - Permite que o Iframe fique em tela cheia.
+    -->
+
+    <!-- Exemplo de recurso externo no caso, um vídeo do Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xK30Iabee_o?si=YRTGaNKyfCfJnZek"
+        title="Canal: Aqueles Caras - Adivinhe quem é o pagodeiro." frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Exemplo de conteúdo Internos-->
+    <iframe src="03_listas.html" frameborder="0" width="600" height="600"> </iframe>
+
+    <!-- Exemplo de conteúdo Externo - Mapas -->
+
+    <iframe
+        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9346567044595!2d-46.63881089999999!3d-23.5348525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585c7b44896f%3A0xff3b0503f8dfddec!2sMemorial%20da%20Resist%C3%AAncia%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1753834398483!5m2!1spt-BR!2sbr"
+        title="Rua Lalala, Número Lalala" width="600" height="450" style="border: 10px;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"> frameborder="0"> </iframe>
+
+        <hr>
+
+        <h2> Carregando Conteúdo Interno </h2>
+
+        <ul>
+            <li> <a href="caneca.jpg" target="galeria"> Caneca </a></li>
+            <li> <a href="vinho.jpg" target="galeria"> Vinho </a></li>
+        </ul>
+        
+        <iframe name="galeria" src="vinho.jpg" frameborder="0" width="400" height="500"></iframe>
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Tabelas</title>
+</head>
+
+<body>
+    <h2> Exemplo de Tabela Horizontal </h2>
+    <table border="1">
+        <caption>
+            Sobre o Mago
+        </caption>
+        <thead>
+            <tr>
+                <th> Nome </th>
+                <th> Sobrenome </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Mago </td>
+                <td> da Silva </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2> Exemplo de Tabela Vertical </h2>
+    <!-- Não usamos "THEAD" na Vertical -->
+    <table border="1">
+        <caption> Dados do Mago </caption>
+        <tbody>
+            <tr>
+                <th> Nome </th>
+                <td> Mago </td>
+            </tr>
+            <tr>
+                <th> Idade </th>
+                <td> 1500 </td>
+            </tr>
+            <tr>
+                <th> Sobrenome </th>
+                <td> da Silva </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> Outro Exemplo Duvidoso </h2>
+    <hr>
+
+    <!-- Colspan e Rowspan
+     Colspan = Mescla/Junta colunas horizontalmente
+     Rowspan = Mescla/Junta linhas verticalmente
+    -->
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Sobrenome </th>
+            <th> Idade </th>
+            <th> Name </th>
+            <th> Nickname </th>
+            <th rowspan="3"> Age </th>
+        </tr>
+
+        <tr>
+            <td> Geovanna </td>
+            <td> Morais </td>
+            <td colspan="3"> 18 </td>
+        </tr>
+
+        <tr> 
+            <td> LALALA </td>
+            <td> NANANA </td>
+            <td> 46 </td>
+        </tr>
+    </table>
+
+    <hr>
+
+
+</body>
+
+</html>

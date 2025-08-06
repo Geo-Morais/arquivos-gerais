@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Internos e Externos</title>
+</head>
+
+<body>
+
+    <h1> Conhecendo a Navegação com Links</h1>
+    <hr>
+
+    <!-- Link Interno - Navegamos no mesmo espaço/site. -->
+    <h2> Conhecendo e Configurando Links Internos </h2>
+
+    <!-- a = Anchor (Âncora) - Link
+         href = HyperText REFerence (Referência de HiperTexto) - URL/Link para navegação
+         Ex: link/url do "google.com" ou no caso de arquivos como o "03-listas.html"
+
+         O texto entre <a> texto exemplo </a> é o texto visivel para o usuário.
+    -->
+    <a href="03_listas.html"> Conhecendo a estrutura do HTML</a>
+
+    <!-- <a href="04_imagens.html" target="_self">
+        <img src="caneca.jpg" alt="Caneca Decoradinha."> 
+    </a> -->
+
+    <hr>
+
+    <!-- Links Externos - Vão levar para páginas fora do nosso site. -->
+    <h2> Conhecendo e Configurando Links Externos </h2>
+
+    <a href="https://www.google.com" target="_blank"> Clique e acesse o site do google </a>
+    <!-- Target () - Forma que a gente lida quando o usuário vai acessar esse link.
+         Blank - Abre uma nova aba para acessar o link. (Sempre para links Externos)
+
+         Self - Abre dentro da sua aba mesmo, substituindo (Usado para Links Internos)
+    -->
+
+    <!-- Mailto - mail (email) to (para) = enviar email para? -->
+    <p> Fale conosco através do e-mail <a href="mailto:geovanna.moraiss00@gmail.com"> geovanna.moraiss00@gmail.com </a></p>
+
+    <!-- Mensagem pronta/personalizada. -->
+    <p> Fale conosco através do e-mail <a
+      href="mailto:geovanna.moraiss00@gmail.com?subject=Contato&body=Olá, gostaria de entrar em contato e fazer um orçamento."> geovanna.moraiss00@gmail.com </a>
+    </p>
+
+    <p> Entre em contato conosco: <a href="tel:11946283219"> (11) 94628-3219 </a></p>
+
+    <p> Baixe o meu currículo resumido <a href="caneca.jpg" target="_self" download="Caneca"> Clique aqui para baixar. </a></p>
+
+</body>
+
+</html>
